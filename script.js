@@ -132,7 +132,7 @@ lines"
 console.log(`String with
 multiple
 lines`);
-*/
+
 
 const age = 15;
 // const isOldEnough = age >= 18;
@@ -152,3 +152,64 @@ if (birthYear <= 2000) {
   century = 21;
 }
 console.log(century);
+
+
+const inputYear = "1991";
+console.log(Number(inputYear) + 18);
+console.log(inputYear + 18);
+
+console.log(Number("Russell"));
+console.log(typeof NaN);
+
+console.log(String(23), 23);
+
+// type coercion
+console.log("I am " + 23 + " years old"); //string when using +
+console.log("23" - "10" - 3); //number when using -
+console.log("23" / "2"); //number when using /
+console.log("23" * "2"); //number when using *
+console.log(2 + 3 + 4 + "5");
+
+
+// 5 falsy values: 0, '', undefined, null, NaN
+console.log(Boolean(0));
+console.log(Boolean(undefined));
+console.log(Boolean("Russell"));
+console.log(Boolean({}));
+console.log(Boolean(""));
+console.log(Boolean(null));
+console.log(Boolean(NaN));
+
+const money = 100;
+if (money) {
+  console.log(`Don't spend it all ;)`);
+} else {
+  console.log(`You should get a job!`);
+}
+*/
+
+const age = "18";
+
+if (age === 18) {
+  console.log(`You just became an adult (strict)`);
+}
+
+if (age == 18) {
+  console.log(`You just became an adult (loose)`);
+}
+
+const favorite = Number(prompt(`What's your favorite number?`));
+console.log(favorite);
+console.log(typeof favorite);
+
+if (favorite === 13) {
+  console.log("Cool! 13 is an amazing number");
+} else if (favorite === 7) {
+  console.log(`7 is also a cool number`);
+} else {
+  console.log(`That is not a cool number`);
+}
+
+if (favorite !== 13) {
+  console.log("Why not 13?");
+}
