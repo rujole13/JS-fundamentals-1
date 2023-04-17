@@ -186,7 +186,7 @@ if (money) {
 } else {
   console.log(`You should get a job!`);
 }
-*/
+
 
 const age = "18";
 
@@ -212,4 +212,23 @@ if (favorite === 13) {
 
 if (favorite !== 13) {
   console.log("Why not 13?");
+}
+*/
+
+const hasDriversLicense = true;
+const hasGoodVision = true;
+
+// AND
+console.log(hasDriversLicense && hasGoodVision);
+// OR
+console.log(hasDriversLicense || hasGoodVision);
+// NOT
+console.log(!hasDriversLicense || hasGoodVision);
+
+const shouldDrive = hasDriversLicense && hasGoodVision;
+
+if (shouldDrive) {
+  console.log(`Sarah is able to drive`);
+} else {
+  console.log(`Someone else should drive...`);
 }

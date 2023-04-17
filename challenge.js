@@ -61,6 +61,8 @@ const johnBMI = johnWeight / johnHeight ** 2;
 
 // Template literals
 
+/*
+
 const description = `${country} is in ${continent}, and its ${population} people speak ${language}.`;
 console.log(description);
 
@@ -79,4 +81,28 @@ if (markBMI > johnBMI) {
   console.log(`Mark's BMI (${markBMI}) is higher than John's (${johnBMI})!`);
 } else {
   console.log(`John's BMI (${johnBMI}) is higher than Mark's (${markBMI})!`);
+}
+*/
+
+const averageDolphins = (97 + 112 + 101) / 3;
+const averageKoalas = (109 + 95 + 106) / 3;
+
+console.log(averageDolphins, averageKoalas);
+
+// if (averageDolphins > averageKoalas) {
+//   console.log(`Dolphins win!`);
+// } else if (averageDolphins < averageKoalas) {
+//   console.log(`Koalas win!`);
+// } else {
+//   console.log(`We have a tie!`);
+// }
+
+if (averageDolphins < 100 && averageKoalas < 100) {
+  console.log(`Minimum score not met!`);
+} else if (averageDolphins > averageKoalas) {
+  console.log(`Dolphins win!`);
+} else if (averageDolphins < averageKoalas) {
+  console.log(`Koalas win!`);
+} else {
+  console.log(`We have a tie!`);
 }
