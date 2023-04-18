@@ -213,7 +213,7 @@ if (favorite === 13) {
 if (favorite !== 13) {
   console.log("Why not 13?");
 }
-*/
+
 
 const hasDriversLicense = true;
 const hasGoodVision = true;
@@ -232,3 +232,52 @@ if (shouldDrive) {
 } else {
   console.log(`Someone else should drive...`);
 }
+
+
+const day = `saturday`;
+
+switch (day) {
+  case `monday`: // day === 'monday'
+    console.log(`Plan course structure`);
+    console.log(`Go to coding meetup`);
+    break;
+  case "tuesday":
+    console.log(`Prepare theory videos`);
+    break;
+  case "wednesday":
+  case "thursday":
+    console.log(`Write code examples`);
+    break;
+  case "friday":
+    console.log(`Record videos`);
+    break;
+  case "saturday":
+  case "sunday":
+    console.log(`Enjoy the weekend :D`);
+    break;
+  default:
+    console.log(`Not a valid day!`);
+}
+
+if (day === "monday") {
+  console.log(`Monday`);
+} else if (day === "tuesday") {
+  console.log(`Tuesday`);
+} else if (day === "wednesday" || day === "thursday") {
+  console.log(`Wednesday/Thursday`);
+} else if (day === "friday") {
+  console.log(`Friday`);
+} else if (day === "saturday" || day === "sunday") {
+  console.log(`Saturday/Sunday`);
+} else {
+  console.log(`Not a valid day! if stmt`);
+}
+*/
+
+const age = 21;
+// age >= 18
+//   ? console.log(`I like to drink wine 🍷`)
+//   : console.log(`I like to drink water 💧`);
+
+const drink = age >= 18 ? "wine 🍷" : "water 💧";
+console.log(drink);

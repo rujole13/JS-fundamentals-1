@@ -82,7 +82,7 @@ if (markBMI > johnBMI) {
 } else {
   console.log(`John's BMI (${johnBMI}) is higher than Mark's (${markBMI})!`);
 }
-*/
+
 
 const averageDolphins = (97 + 112 + 101) / 3;
 const averageKoalas = (109 + 95 + 106) / 3;
@@ -106,3 +106,16 @@ if (averageDolphins < 100 && averageKoalas < 100) {
 } else {
   console.log(`We have a tie!`);
 }
+*/
+
+// Coding challenge #4
+
+const bill = 40;
+
+const tip = 50 <= bill && bill <= 300 ? bill * 0.15 : bill * 0.2;
+
+console.log(
+  `The bill was ${bill}, the tip was ${tip}, and the total value was ${
+    bill + tip
+  }`
+);
